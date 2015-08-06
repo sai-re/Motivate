@@ -1,16 +1,16 @@
 (function displayquote() {
 
-    var date = new Date();
-    var today = date.getDay();
+    var date = new Date(),
+        today = date.getDay(),
 
-    var weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+        weekdays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
 
-    var dateContent = document.getElementById('datebox');
-    var quoteContent = document.getElementById('quotebox');
+        dateContent = document.getElementById('datebox'),
+        quoteContent = document.getElementById('quotebox');
 
-    dateContent.innerHTML = '<h1>'+weekdays[today]+'</h1>';
+    dateContent.innerHTML = '<h1>' + weekdays[today] + '</h1>';
 
-    switch(today) {
+    switch (today) {
 
         case 0: 
             quoteContent.innerHTML = '<p><q>The secret of life, though, is to fall seven times and to get up eight times.</q></p>';
@@ -55,12 +55,16 @@
         { colour: '#c0392b' },
         { colour: '#ffc107' },
         { colour: '#1abc9c' },
-        { colour: '#34495e' }
-    ];
+        { colour: '#34495e' },
+        { colour: '#795548' },
+        { colour: '#3f51b5' },
+        { colour: '#9e9e9e' }
+    ],
     
-    var body = document.querySelector('body');
-    var randomNumber = Math.floor(Math.random() * 6); 
+        body = document.querySelector('body'),
+        randomNumber = Math.floor(Math.random() * colourlist.length); 
     
     body.style.backgroundColor = colourlist[randomNumber].colour;
+    
 }());
 

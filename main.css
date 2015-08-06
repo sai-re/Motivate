@@ -1,59 +1,12 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+* {
+    margin: 0;
+    padding: 0;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
-/*---------------------------------------------*/
 
 html, body {
-    width: 100%;
     height: 100%;
-    font-family: 'Tangerine';
-    color: #ffffff;
+    font-family: 'Tangerine', sans-serif;
+    color: white;
 }
 
 q {
@@ -66,70 +19,39 @@ q:after {
     content: close-quote;
 }
 
-/*body {
-    background-image: url(Images/sunset.jpg);
-}*/
-
-
 @media (min-width: 240px) {
     
     main {
         position: relative;
-        width: 100%;
-        text-align: center;  
         margin: auto;
-        top: 30%;
+        text-align: center;
+        font-size: 2.5em;
+        top: 25%;
+        text-shadow: 5px 5px 8px black;
     }
-
+    
     h1 {
-        font-size: 4em;
-        margin-bottom: 5%;
-        text-shadow: 5px 5px 8px black;
+        font-weight: lighter;
     }
-
+    
     p {
-        font-size: 2em;
-        text-shadow: 5px 5px 8px black;
-    } 
+        margin-top: 5%;
+    }
 }
 
 @media (min-width: 768px) {
     
     main {
-        width: 70%;
-        top: 35%;
-    }
-    
-    h1 {
-        font-size: 5em;
-        margin-bottom: 10%;
-    }
-
-    p {
-        font-size: 3em;
-    }
-}
-
-@media (min-width: 1024px) {
-    main {
+        font-size: 4em;
         top: 30%;
-    }    
-    
-    h1 {
-        margin-bottom: 5%;
     }
 }
-
 
 @media (min-width: 1279px) {
-
-    main {
-        width: 60%;
-        top: 30%;
-    }    
     
-    h1 {
-        margin-bottom: 5%;
+    main {
+        top: 20%;
+        width: 60%;
     }
+    
 }
-
