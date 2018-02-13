@@ -49,16 +49,16 @@
 (function displaycolours() {
     
     var colourlist = [
-        { colour: '#ff9800' }, 
-        { colour: '#8bc34a' }, 
-        { colour: '#00bcd4' }, 
-        { colour: '#c0392b' },
-        { colour: '#ffc107' },
-        { colour: '#1abc9c' },
-        { colour: '#34495e' },
-        { colour: '#795548' },
-        { colour: '#3f51b5' },
-        { colour: '#9e9e9e' }
+        { colour: '#EC644B' }, 
+        { colour: '#1E8BC3' }, 
+        { colour: '#049372' }, 
+        { colour: '#D35400' },
+        { colour: '#E67E22' },
+        { colour: '#C0392B' },
+        { colour: '#913D88' },
+        { colour: '#22A7F0' },
+        { colour: '#90C695' },
+        { colour: '#F2784B' }
     ],
     
         body = document.querySelector('body'),

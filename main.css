@@ -5,7 +5,7 @@
 
 html, body {
     height: 100%;
-    font-family: 'Tangerine', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
     color: white;
 }
 
@@ -19,38 +19,42 @@ q:after {
     content: close-quote;
 }
 
+#datebox {
+    text-transform: uppercase;
+}
+
 @media (min-width: 240px) {
     
-    main {
-        position: relative;
-        margin: auto;
+    .quote-holder {
         text-align: center;
         font-size: 2.5em;
-        top: 25%;
-        text-shadow: 5px 5px 8px black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
     }
     
     h1 {
-        font-weight: lighter;
+        font-weight: 300;
     }
     
     p {
-        margin-top: 5%;
+        margin-top: 30px;
+        line-height: 52px;
     }
 }
 
 @media (min-width: 768px) {
     
-    main {
-        font-size: 4em;
-        top: 30%;
+    .quote-holder {
+        font-size: 3em;
     }
 }
 
 @media (min-width: 1279px) {
     
-    main {
-        top: 20%;
+    .quote-holder {
         width: 60%;
     }
     
