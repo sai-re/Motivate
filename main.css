@@ -23,39 +23,44 @@ q:after {
     text-transform: uppercase;
 }
 
-@media (min-width: 240px) {
+@media (min-width: 320px) {
+
+    main {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
     
     .quote-holder {
         text-align: center;
-        font-size: 2.5em;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        width: 90%;
+        padding: 15px;
     }
     
     h1 {
         font-weight: 300;
+        font-size: 2.5rem;
     }
     
     p {
+        font-size: 2rem;
         margin-top: 30px;
         line-height: 52px;
     }
 }
 
-@media (min-width: 768px) {
-    
-    .quote-holder {
-        font-size: 3em;
-    }
-}
+@media (min-width: 1280px) {
 
-@media (min-width: 1279px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    p {
+        font-size: 2.5rem;
+    }
     
     .quote-holder {
-        width: 60%;
+        width: 80%;
     }
     
 }
